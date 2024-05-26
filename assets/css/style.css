@@ -142,6 +142,31 @@ header {
     display: block;
 }
 
+/* Início das configs do main landing page */
+
+.main-landing {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-title {
+    width: 90%;
+    height: 40%;
+    background-color: #e99630;
+    background-image: url(../img/pawBackground2.svg);
+    border-radius: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: "Acme", sans-serif;
+    color: #FFF;
+    border: solid 1px black;
+}
+
 /* Responsividade */
 
 @media screen and (min-width: 1000px) {
@@ -164,4 +189,8 @@ header {
         width: 100%;
     }
     
+    .banner-title {
+        width: 50%;
+        font-size: 40px;
+    }
 }

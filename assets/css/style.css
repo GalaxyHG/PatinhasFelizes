@@ -17,7 +17,7 @@ font-family: "Montserrat", sans-serif;
 
 body {
   background-image: url(../img/pawsBackground.svg);
-  background-color: #262626;
+  background-color: #292828;
   line-height: 1.5;
 }
 
@@ -251,8 +251,6 @@ header {
   color: #FFF;
 }
 
-
-
 footer span {
   font-size: 14px;
 }
@@ -263,6 +261,16 @@ footer span {
   border: solid 1px #FFF;
   border-radius: 50%;
   transition: 0.3s;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.network i {
+  position: relative;
+  top: 1px;
+  left: 0.5px;
 }
 
 .network:hover {

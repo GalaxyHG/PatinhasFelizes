@@ -221,7 +221,7 @@ header {
 
 /* Início das configs do Footer */
 
-footer {
+.footer-mobile {
   width: 100%;
   background-color: #202020;
   border-radius: 15px 15px 0px 0px;
@@ -233,10 +233,28 @@ footer {
   box-shadow: 4px 0px 16px #000000;
   margin-top: 50px;
   padding: 10px;
+  color: #FFF;
 }
 
+.footer-pc {
+  width: 100%;
+  background-color: #202020;
+  border-radius: 15px 15px 0px 0px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: 1px;
+  box-shadow: 4px 0px 16px #000000;
+  margin-top: 50px;
+  padding: 10px;
+  color: #FFF;
+}
+
+
+
 footer span {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .network {
@@ -256,6 +274,7 @@ footer span {
   align-items: center;
   justify-content: space-around;
   width: 150px;
+  margin-top: 5px;
 }
 
 .helper {
@@ -268,6 +287,7 @@ footer span {
 .footer-area {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 
@@ -278,6 +298,11 @@ footer span {
   text-align: center;
 }
 
+.help-area li {
+  display: inline-block;
+  margin: 10px;
+}
+
 .help-area li a {
   color: #FFF;
   text-decoration: none;
@@ -285,6 +310,12 @@ footer span {
 
 .help-area li a:hover {
   border-bottom: solid 1px #FFF;
+}
+
+.container-help-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Responsividade */
@@ -316,5 +347,17 @@ footer span {
 
   .text-section {
     font-size: 20px;
+  }
+
+  footer span {
+    font-size: 20px;
+  }
+  
+  .footer-pc {
+    display: flex;
+  }
+
+  .footer-mobile {
+    display: none;
   }
 }

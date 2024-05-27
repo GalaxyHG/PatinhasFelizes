@@ -223,15 +223,68 @@ header {
 
 footer {
   width: 100%;
-  height: 10vh;
   background-color: #202020;
   border-radius: 15px 15px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   letter-spacing: 1px;
   box-shadow: 4px 0px 16px #000000;
   margin-top: 50px;
+  padding: 10px;
+}
+
+footer span {
+  font-size: 12px;
+}
+
+.network {
+  width: 35px;
+  height: 35px;
+  border: solid 1px #FFF;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.network:hover {
+  box-shadow: 0px 0px 10px #FFF;
+}
+
+.networks-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 150px;
+}
+
+.helper {
+  text-align: center;
+  color: #FFF;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.footer-area {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.help-area {
+  color: #FFF;
+  font-size: 12px;
+  list-style: none;
+  text-align: center;
+}
+
+.help-area li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.help-area li a:hover {
+  border-bottom: solid 1px #FFF;
 }
 
 /* Responsividade */

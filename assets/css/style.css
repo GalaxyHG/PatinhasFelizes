@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* 
 font-family: "Roboto", sans-serif;
@@ -9,188 +9,256 @@ font-family: "Montserrat", sans-serif;
 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    background-image: url(../img/pawsBackground.svg);
-    background-color: #262626;
+  background-image: url(../img/pawsBackground.svg);
+  background-color: #262626;
+  line-height: 1.5;
 }
 
 /* Fontes do site */
 
 .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .acme-regular {
-    font-family: "Acme", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Início das configs da barra de rolagem */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #353535;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* -------- Inicio das configs do cabeçalho -------- */
 
 header {
-    height: 10vh;
-    width: 100%;
-    background-color: #F28705;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.5);
+  height: 10vh;
+  width: 100%;
+  background-color: #f28705;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* Logo Header */
 
 .logo {
-    height: 100%;
+  height: 100%;
 }
 
 .logo a img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .nav-bar {
-    display: none;
+  display: none;
 }
 
 .nav-bar ul li {
-    display: inline-block;
-    margin-left: 20px;
-    font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 20px;
 }
 
 .nav-item a {
-    font-family: "Acme", sans-serif;
-    text-decoration: none;
-    color: #FFF;
-    transition: 0.4s;
+  font-family: "Acme", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
 }
 
 .nav-item a:hover {
-    text-shadow: 0px 0px 25px #ff0000;
-    border-bottom: solid 1px #FFF;
+  text-shadow: 0px 0px 25px #ff0000;
+  border-bottom: solid 1px #fff;
 }
 
 /* Menu Suspenso */
 
 .dropbtn {
-    background-color: transparent;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    box-shadow: 1px 1px 50px 0px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 1px 1px 50px 0px rgba(0, 0, 0, 0.2) inset;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #F1EECF;
-    border: solid 15px #FFF;
-    border-radius: 15px;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    right: 0px;
+  display: none;
+  position: absolute;
+  background-color: #f1eecf;
+  border: solid 15px #fff;
+  border-radius: 15px;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0px;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
 }
 
 .fim {
-    border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .inicio {
-    border-top: 1px solid #000;
+  border-top: 1px solid #000;
 }
 
 .dropdown-content a:hover {
-    background-color: #F28705;
+  background-color: #f28705;
+  color: #FFF;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 /* Início das configs do main landing page */
 
 .main-landing {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-title {
-    width: 90%;
-    height: 40%;
-    background-color: #e99630;
-    background-image: url(../img/pawBackground2.svg);
-    border-radius: 10px 0px 10px 0px;
+  width: 90%;
+  height: 55%;
+  background-color: #e99630;
+  background-image: url(../img/pawBackground2.svg);
+  border-radius: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Acme", sans-serif;
+  color: #fff;
+  border: solid 1px black;
+}
+
+/* Início das configs da section landing page */
+
+.section-landing * {
+    margin-top: 10px;
+}
+
+.white {
+    color: #cecece;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.text-titles {
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 30px;
-    font-family: "Acme", sans-serif;
-    color: #FFF;
-    border: solid 1px black;
+    padding: 0px 20px;
+}
+
+.text-titles span {
+    margin-left: 10px;
+}
+
+.text-section {
+    padding: 0px 20px;
+}
+
+/* Início das configs do Footer */
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #202020;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  box-shadow: 4px 0px 16px #000000;
+  margin-top: 40px;
 }
 
 /* Responsividade */
 
 @media screen and (min-width: 1000px) {
-    .nav-bar {
-        display: block;
-    }
+  .nav-bar {
+    display: block;
+  }
 
-    .dropbtn {
-        display: none;
-    }
+  .dropbtn {
+    display: none;
+  }
 
-    header {
-        justify-content: left;
-    }
+  header {
+    justify-content: left;
+  }
 
-    .nav-bar {
-        margin-left: 20px;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .banner-title {
-        width: 50%;
-        font-size: 40px;
-    }
+  .nav-bar {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .banner-title {
+    width: 50%;
+    font-size: 40px;
+  }
+
+  .text-section {
+    font-size: 20px;
+  }
 }
